@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu{
+    list-style-type: none;
+    background-color:aquamarine ;
+    padding-block: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 3;  
+}
+
+.menu_item{
+    display: inline-block;
+    margin-inline: 10px;    
+}
+
+.menu_item a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu_item.active a, .menu_item a:hover{ 
+    text-decoration: underline double;
+}
+
+main{
+    padding: 40px;
+}
+
+/*LIBROS */
+
+.libros{
+    width: 30%;
+    background-color: rgb(95, 145, 238);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-inline: 1.5px;
+    margin-block: 50px;
+    position: relative;
+    overflow: auto ;
+    border: 4px double pink;
+}
+
+.libros__imagen{
+    width: 50%;     
+}
+
+.libros__titulo{
+    font-size: 18px;
+}
+
+.libros__parrafo{
+    font: size 14px;
+    text-align: justify;
+}
+
+.libros__boton{
+    background-color:aquamarine ;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.libros__imagen, .libros__titulo, .libros__parrafo{
+    margin-bottom: 10px;
+}
+
+.libros__wpp{
+    width: 50px;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* */
+.wpp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}

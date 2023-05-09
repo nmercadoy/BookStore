@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.Menu {
+    
+    list-style-type: none;
+    
+    font-weight: 900;
+    font-size: 24px ;
+}
+
+.Menu li{
+    
+    display: inline;
+    margin-right: 10px;
+}
+
+.Menu li a{
+    font-family: 'Rajdhani', sans-serif;
+    color: blue ;
+}
+
+.Cosas {
+    list-style-position: inside;
+}
+
+.Biografia{
+    width: 400px;
+    height: 400px;
+    background-color: #db70b2;
+    margin: 20px 0px 60px 0px;
+    padding: 20px 20px 20px 20px;
+
+    color: white;
+    background-image: url("./../imagen/OIP.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment_:scroll;
+
+    border-radius: 30px;
+
+}
+
+.Biografia p{
+    text-align: center;
+    line-height: 30px;
+    text-decoration: underline;
+
+}
+    

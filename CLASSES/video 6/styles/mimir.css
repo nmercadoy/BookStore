@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+        "logo   logo    contacto     servicios"
+        "logo   logo    productos    quienSoy";
+}
+
+.logo {
+grid-column: 1/3;
+grid-row: 1/3; 
+grid-area: logo;
+background-color: blueviolet;
+background-image: url("../img/postres.jpg");
+}
+
+.quienSoy {
+/* grid-column: 4/5;
+grid-row: 2/3; */
+grid-area: quienSoy;
+background-color:hotpink;
+}
+
+.servicios {
+grid-area: servicios;
+background-color: brown;
+}
+
+.productos {
+grid-area: productos;
+background-color: cornflowerblue;
+background-image: url("../img/productos.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+.contacto {
+grid-area: contacto;
+background-color: crimson;
+}
+
+.container > div {
+display: grid;
+place-items: center;
+}
